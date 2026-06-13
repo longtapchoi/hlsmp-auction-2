@@ -1,0 +1,20 @@
+name: '#0c1719[Admin] Vật phẩm đã mua (%page%/%max-page%)'
+size: 54
+patterns:
+  - 'zauctionhouse-decoration'
+  - 'zauctionhouse-pagination'
+  - 'zauctionhouse-back'
+items:
+  items:
+    type: ZAUCTIONHOUSE_ADMIN_PURCHASED_ITEMS
+    slots:
+      - 9-17
+      - 18-26
+      - 27-35
+      - 36-44
+    else:
+      slots:
+        - 22
+      item:
+        material: BARRIER
+        name: '#ff0000&nKhông có vật phẩm nào'
