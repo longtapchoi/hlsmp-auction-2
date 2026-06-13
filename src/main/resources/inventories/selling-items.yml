@@ -1,0 +1,65 @@
+name: '#0c1719Vật phẩm của bạn (%page%/%max-page%)'
+size: 54
+patterns:
+  - 'zauctionhouse-pagination'
+
+items:
+
+  # Viền hàng đầu - kính đen
+  deco-top:
+    is-permanent: true
+    slots:
+      - 0-3
+      - 5-8
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      name: "<white>"
+
+  # Rương lấy tất cả - hàng đầu giữa (slot 4)
+  remove-all:
+    type: ZAUCTIONHOUSE_REMOVE_ALL_SELLING
+    is-permanent: true
+    slot: 4
+    item:
+      material: CHEST
+      name: "#2CCED2<bold>Lấy tất cả"
+      lore:
+        - "#92ffffLấy lại toàn bộ vật phẩm đang bán."
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể lấy tất cả"
+
+  # Items người chơi đang bán - 4 hàng giữa
+  items:
+    type: ZAUCTIONHOUSE_SELLING_ITEMS
+    empty-slot: 31
+    slots:
+      - 9-17
+      - 18-26
+      - 27-35
+      - 36-44
+    item:
+      material: BARRIER
+      name: '#ff0000&nKhông có vật phẩm nào'
+
+  # Viền hàng cuối - kính đen
+  deco-bottom:
+    is-permanent: true
+    slots:
+      - 45-48
+      - 50-53
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      name: "<white>"
+
+  # Mũi tên quay lại - hàng cuối giữa (slot 49)
+  back:
+    type: BACK
+    is-permanent: true
+    slot: 49
+    item:
+      material: ARROW
+      name: "#2CCED2<bold>Quay lại"
+      lore:
+        - "#92ffffQuay lại giao diện trước."
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể quay lại"
