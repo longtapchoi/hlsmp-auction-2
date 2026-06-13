@@ -1,0 +1,51 @@
+name: "#0c1719Nội dung Shulker (%shulker-current%/%shulker-total%)"
+size: 54
+patterns:
+  - 'zauctionhouse-decoration'
+  - 'zauctionhouse-back'
+items:
+  content:
+    type: ZAUCTIONHOUSE_SHULKER_CONTENT
+    slots:
+      - 9-17
+      - 18-26
+      - 27-35
+      - 36-44
+    empty-slot: 22
+    item:
+      material: BARRIER
+      name: "#2CCED2<bold>Hộp Shulker trống"
+      lore:
+        - "#92ffffHộp Shulker này không có vật phẩm nào."
+  shulker-info:
+    type: ZAUCTIONHOUSE_SHULKER_INFO
+    slot: 4
+    item:
+      material: SHULKER_BOX
+      name: "#2CCED2<bold>Hộp Shulker"
+      lore:
+        - "#92ffffĐang xem hộp #2CCED2%shulker_current% #92ffff/ #2CCED2%shulker_total%"
+        - ""
+        - "#8c8c8c• Dùng nút điều hướng để chuyển"
+  previous:
+    type: ZAUCTIONHOUSE_SHULKER_NAVIGATION
+    direction: previous
+    slot: 48
+    item:
+      material: ARROW
+      name: "#2CCED2<bold>Hộp trước"
+      lore:
+        - "#92ffffXem hộp Shulker trước."
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể xem"
+  next:
+    type: ZAUCTIONHOUSE_SHULKER_NAVIGATION
+    direction: next
+    slot: 50
+    item:
+      material: ARROW
+      name: "#2CCED2<bold>Hộp tiếp theo"
+      lore:
+        - "#92ffffXem hộp Shulker tiếp theo."
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể xem"
