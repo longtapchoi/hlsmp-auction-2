@@ -21,6 +21,7 @@ jobs:
           echo "Found ZIP: $ZIP"
           unzip -o "$ZIP" -x "*.zip"
           rm "$ZIP"
+          rm -rf .github/workflows/build.yml
 
       - name: Commit extracted source
         run: |
