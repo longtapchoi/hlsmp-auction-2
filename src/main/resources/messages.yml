@@ -1,0 +1,173 @@
+################################################################################################################################
+#
+#   zAuctionHouse V4 - Messages Configuration
+#   Đã dịch sang Tiếng Việt - HLSMP
+#
+################################################################################################################################
+
+prefix: "&6&lĐẤU GIÁ &r&8• "
+
+version-available: "<#ff0000>Có phiên bản mới! <gray>(<white>hiện tại: <#ff9900>%version% <gray>| <white>mới nhất: <#00ff00>%latest%<gray>)"
+
+command-syntax-error: "<error>Bạn phải thực hiện lệnh như sau<gray>: <success>%syntax%"
+command-no-permission: "<error>Bạn không có quyền thực hiện lệnh này."
+command-no-console: "<error>Chỉ người chơi mới có thể thực hiện lệnh này."
+command-no-arg: "<error>Không tìm thấy lệnh với các tham số này."
+command-restricted: "<error>Bạn không thể dùng lệnh này ở đây."
+command-cooldown: "<error>Vui lòng chờ trước khi dùng lệnh này."
+command-syntax-help: "<white>%syntax% <dark_gray>» <gray>%description%"
+
+command-description-auction: "Mở nhà đấu giá"
+command-description-auction-sell: "Đăng bán vật phẩm"
+command-description-auction-rent: "Cho thuê vật phẩm"
+command-description-auction-bid: "Đấu giá vật phẩm"
+command-description-auction-reload: "Tải lại cấu hình"
+command-description-auction-admin: "Công cụ quản trị đấu giá"
+command-description-auction-admin-generate: "Tạo vật phẩm giả"
+command-description-auction-admin-open: "Mở danh sách đấu giá hiện tại"
+command-description-auction-admin-forceopen: "Mở giao diện cho người chơi"
+command-description-auction-admin-history: "Xem lịch sử đấu giá của người chơi"
+command-description-auction-admin-add: "Thêm vật phẩm vào đấu giá"
+command-description-auction-admin-cache: "Quản lý cache người chơi"
+command-description-auction-admin-cache-set: "Đặt giá trị cache"
+command-description-auction-admin-cache-clear: "Xóa cache"
+command-description-auction-admin-cache-show: "Xem cache"
+command-description-auction-claim: "Nhận tiền bán hàng đang chờ"
+command-description-auction-page: "Mở đấu giá ở trang cụ thể"
+command-description-auction-migrate: "Di chuyển dữ liệu từ plugin khác"
+command-description-auction-search: "Tìm kiếm vật phẩm trong đấu giá"
+command-description-auction-option: "Quản lý tùy chọn đấu giá"
+
+inventory-not-found: "<error>Không tìm thấy giao diện <white>%inventory-name%<error>."
+
+sell-error-air: "<error>Bạn không thể bán tay không!"
+sell-error-change: "<error>Vật phẩm trên tay đã thay đổi, hủy bán."
+sell-error-economy: "<error>Không tìm thấy kinh tế <white>%name%<error>."
+sell-error-default-economy: "<error>Chưa cấu hình kinh tế mặc định. Liên hệ admin."
+sell-inventory-empty: "<error>Bạn phải đặt vật phẩm vào ô trước khi xác nhận."
+sell-inventory-cancelled: "<error>Bạn đã hủy bán, vật phẩm được trả lại."
+sell-items-cleared: "<success>Đã xóa các vật phẩm đã chọn."
+sell-item-added: "<success>Đã thêm vật phẩm vào danh sách bán."
+sell-item-removed: "<success>Đã xóa vật phẩm khỏi danh sách bán."
+
+admin-target-required: "<error>Bạn phải chỉ định người chơi mục tiêu."
+admin-target-not-found: "<error>Không tìm thấy người chơi <white>%target%<error>."
+admin-open-inventory: "<success>Đang mở vật phẩm %type% của <white>%target%<success>."
+admin-forceopen-inventory: "<success>Đang mở giao diện <white>%inventory%<success> cho <white>%target%<success> tại trang <white>%page%<success>."
+admin-open-history: "<success>Đang mở lịch sử của <white>%target%<success>."
+admin-item-removed: "<success>Đã xóa <white>%items%<success> của <white>%target%<success>."
+admin-item-added: "<success>Đã thêm <white>%items%<success> cho <white>%target%<success> vào <white>%type%<success>."
+admin-item-retrieved: "<success>Đã lấy lại vật phẩm thành công."
+admin-no-item-to-retrieve: "<error>Không có vật phẩm để lấy lại từ mục này."
+
+reload-success: "<success>Đã tải lại plugin thành công!"
+
+item-remove-listed: "#e6fff3Bạn đã lấy lại %items% #e6fff3từ danh sách đang bán."
+item-remove-expired: "#e6fff3Bạn đã lấy lại %items% #e6fff3từ vật phẩm hết hạn."
+item-remove-purchased: "#e6fff3Bạn đã lấy lại %items% #e6fff3từ vật phẩm đã mua."
+item-remove-selling: "#e6fff3Bạn đã lấy lại %items% #e6fff3từ vật phẩm của bạn."
+
+item-sold: "#e6fff3Bạn vừa bán %items% #e6fff3với giá #92bed8%price%#e6fff3."
+item-bought-seller: "#ffacd5%buyer% #e6fff3vừa mua %items% #e6fff3với giá #92bed8%price%#e6fff3."
+item-bought-buyer: "#e6fff3Bạn vừa mua %items% #e6fff3với giá #92bed8%price%#e6fff3."
+
+not-enough-money: "<error>Bạn không đủ tiền để mua vật phẩm này."
+not-enough-space: "<error>Túi đồ của bạn không đủ chỗ."
+price-too-high: "<error>Bạn không thể bán với giá cao hơn <white>%max-price%<error>."
+price-too-low: "<error>Bạn không thể bán với giá thấp hơn <white>%min-price%<error>."
+listed-items-limit: "<error>Bạn không thể đăng bán quá <white>%max-items%<error> vật phẩm."
+world-banned: "<error>Bạn không thể bán vật phẩm ở thế giới này."
+item-blacklisted: "<error>Vật phẩm này không được phép bán."
+item-whitelisted: "<error>Vật phẩm này không có trong danh sách được phép bán."
+
+admin-generate-warning:
+  - "<error>⚠ CẢNH BÁO ⚠"
+  - "<error>Lệnh này sẽ tạo <white>%amount%<error> vật phẩm đấu giá giả để kiểm tra hiệu năng."
+  - "<error>Dữ liệu này là <white>GIẢ<error> và cần được xóa sau khi kiểm tra."
+  - "<error>Thực hiện lại lệnh trong vòng <white>30 giây<error> để xác nhận."
+
+admin-generate-confirmed: "<success>Đã xác nhận! Đang tạo <white>%amount%<success> vật phẩm đấu giá..."
+admin-generate-progress: "<gray>Tiến độ: <white>%current%<gray>/<white>%total%<gray> vật phẩm..."
+admin-generate-complete: "<success>Đã tạo thành công <white>%amount%<success> vật phẩm trong <white>%time%ms<success>."
+admin-generate-no-materials: "<error>Không tìm thấy vật liệu hợp lệ. Hãy cấu hình danh mục khác ngoài 'misc'."
+admin-generate-invalid-amount: "<error>Số lượng không hợp lệ. Vui lòng nhập số từ <white>1<error> đến <white>100000<error>."
+admin-generate-players-start: "<gray>Đang đăng ký <white>%total%<gray> người chơi..."
+admin-generate-players-progress: "<gray>Đã đăng ký: <white>%current%<gray>/<white>%total%<gray>..."
+admin-generate-players-complete: "<success>Đã đăng ký thành công <white>%amount%<success> người chơi."
+admin-generate-items-start: "<gray>Đang tạo <white>%total%<gray> vật phẩm đấu giá..."
+
+admin-cache-show-header: "<primary>Cache của <white>%player%<primary>:"
+admin-cache-show-entry: "<gray>  %key% <dark_gray>» <white>%value%"
+admin-cache-show-empty: "<gray>  Không có cache nào."
+admin-cache-cleared: "<success>Đã xóa cache <white>%key%<success> của <white>%player%<success>."
+admin-cache-cleared-all: "<success>Đã xóa toàn bộ cache của <white>%player%<success>."
+admin-cache-cleared-all-players: "<success>Đã xóa cache <white>%key%<success> của <white>%count%<success> người chơi."
+admin-cache-cleared-all-players-all: "<success>Đã xóa toàn bộ cache của <white>%count%<success> người chơi."
+admin-cache-set: "<success>Đã đặt <white>%key%<success> thành <white>%value%<success> cho <white>%player%<success>."
+admin-cache-set-all-players: "<success>Đã đặt <white>%key%<success> thành <white>%value%<success> cho <white>%count%<success> người chơi."
+admin-cache-invalid-key: "<error>Cache key không hợp lệ <white>%key%<error>."
+admin-cache-invalid-value: "<error>Giá trị không hợp lệ <white>%value%<error> cho key <white>%key%<error>."
+admin-cache-key-not-settable: "<error>Cache key <white>%key%<error> không thể đặt bằng lệnh."
+admin-cache-player-not-online: "<error>Người chơi <white>%player%<error> không online."
+
+claim-no-pending: "<error>Bạn không có tiền nào đang chờ nhận."
+claim-success: "<success>Bạn đã nhận thành công tiền đang chờ!"
+claim-economy-success: "<success>Bạn nhận được <white>%amount%<success> từ <white>%economy%<success>."
+claim-pending-notify: "#e6fff3Bạn có tiền đang chờ nhận! Dùng <white>/ah claim<#e6fff3> để nhận <white>%amount%<#e6fff3>."
+
+sales-notification:
+  - "<click:run_command:/ah history>#e6fff3Trong khi bạn offline, <white>%count%<#e6fff3> vật phẩm đã được bán với tổng giá trị <white>%total%<#e6fff3>!"
+  - "<click:run_command:/ah history>#8c8c8c• #2CCED2Click vào đây<#92ffff> để xem lịch sử bán hàng</click>"
+
+tax-sell-applied: "<gray>Thuế <white>%tax%<gray> (%percentage%%) đã được áp dụng cho lần bán này."
+tax-purchase-applied: "<gray>Thuế <white>%tax%<gray> (%percentage%%) đã được trừ từ tiền bán."
+tax-capitalism-info: "<gray>Giá đã bao gồm <white>%tax%<gray> VAT (%percentage%%)."
+tax-exempt: "<green>Bạn được miễn thuế."
+tax-reduced: "<green>Bạn được giảm thuế còn %percentage%%."
+tax-insufficient-funds: "<error>Bạn không đủ tiền để trả thuế <white>%tax%<error>."
+
+migration-not-configured: "<error>Chưa cấu hình di chuyển cho <white>%source%<error>."
+migration-invalid-source: "<error>Nguồn di chuyển không hợp lệ: <white>%source%"
+migration-available-sources: "<gray>Các nguồn có sẵn: %sources%"
+migration-info:
+  - "<primary>Di chuyển từ <white>%source%"
+  - "<gray>Chi tiết: <white>%details%"
+migration-confirm:
+  - "<gray>Chạy <white>/ah admin migrate %source% confirm<gray> để bắt đầu."
+  - "<error>⚠ CẢNH BÁO: Hãy sao lưu dữ liệu trước khi di chuyển!"
+migration-started: "<success>Đã bắt đầu di chuyển từ <white>%source%<success>... Quá trình này có thể mất một lúc."
+migration-progress: "<gray>[Di chuyển] %progress%"
+migration-success:
+  - "<success>Di chuyển từ <white>%source%<success> hoàn tất!"
+  - "<gray>  Người chơi: <white>%players%"
+  - "<gray>  Vật phẩm: <white>%items%"
+  - "<gray>  Giao dịch: <white>%transactions%"
+  - "<gray>  Lỗi: <white>%errors%"
+  - "<gray>  Thời gian: <white>%duration%ms"
+migration-failed: "<error>Di chuyển thất bại: <white>%error%"
+
+search-start: "<#8a8a8a>Vui lòng nhập nội dung tìm kiếm vào chat."
+search-cleared: "<#8a8a8a>Đã xóa tìm kiếm."
+search-no-results: "<#8a8a8a>Không tìm thấy vật phẩm nào cho <#ffffff>%query%<#8a8a8a>."
+search-searching: "<#8a8a8a>Đang tìm kiếm <#ffffff>%query%<#8a8a8a>..."
+
+broadcast-sell: "#e6fff3<white>%seller% <#e6fff3>vừa đăng bán %items% <#e6fff3>với giá <#92bed8>%price%<#e6fff3>."
+broadcast-purchase: "#e6fff3<white>%buyer% <#e6fff3>vừa mua %items% <#e6fff3>với giá <#92bed8>%price%<#e6fff3>."
+
+option-broadcast-sell-enabled: "<success>Đã bật thông báo đăng bán."
+option-broadcast-sell-disabled: "<success>Đã tắt thông báo đăng bán."
+option-broadcast-purchase-enabled: "<success>Đã bật thông báo mua hàng."
+option-broadcast-purchase-disabled: "<success>Đã tắt thông báo mua hàng."
+option-list-header: "<primary>Tùy chọn của bạn:"
+option-list-entry: "<gray>  %option% <dark_gray>> <white>%value%"
+
+command-description-auction-admin-option: "Quản lý tùy chọn người chơi"
+command-description-auction-admin-option-set: "Đặt tùy chọn cho người chơi"
+command-description-auction-admin-option-list: "Xem tùy chọn người chơi"
+command-description-auction-admin-option-reset: "Đặt lại tùy chọn người chơi"
+
+admin-option-set: "<success>Đã đặt tùy chọn <white>%option%<success> thành <white>%value%<success> cho <white>%player%<success>."
+admin-option-reset: "<success>Đã đặt lại tất cả tùy chọn của <white>%player%<success>."
+admin-option-list-header: "<primary>Tùy chọn của <white>%player%<primary>:"
+
+remove-all-items: "#e6fff3Bạn đã lấy lại <white>%amount%<#e6fff3> vật phẩm."
