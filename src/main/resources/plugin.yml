@@ -1,0 +1,24 @@
+name: HLSMP-Auction
+version: 4.0.0.8
+main: fr.maxlego08.zauctionhouse.ZAuctionPlugin
+api-version: '1.21'
+authors: [ Maxlego08 ]
+description: Nhà đấu giá HLSMP
+folia-supported: true
+depend:
+  - zMenu
+  - PlaceholderAPI
+softdepend:
+  - LuckPerms
+  - AxShulkers
+  - VotingPlugin
+  - zEssentials
+libraries:
+  - org.mariadb.jdbc:mariadb-java-client:3.5.6
+
+commands:
+  ah:
+    description: Mở nhà đấu giá
+  auctiontoggle:
+    description: Bật/tắt thông báo nhà đấu giá
+    usage: /auctiontoggle
