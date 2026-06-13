@@ -1,0 +1,78 @@
+name: '#0c1719[Admin] Giao dịch (%page%/%max-page%)'
+size: 54
+patterns:
+  - 'zauctionhouse-decoration'
+  - 'zauctionhouse-pagination'
+  - 'zauctionhouse-back'
+items:
+  items:
+    type: ZAUCTIONHOUSE_ADMIN_TRANSACTIONS
+    loading-slot: 22
+    slots:
+      - 9-17
+      - 18-26
+      - 27-35
+      - 36-44
+    item:
+      material: BARRIER
+      name: "#ff0000Đang tải..."
+    else:
+      slots:
+        - 22
+      item:
+        material: BARRIER
+        name: '#ff0000&nKhông có giao dịch nào'
+        lore:
+          - ''
+          - '&7Chưa có giao dịch nào.'
+  filter-status:
+    type: ZAUCTIONHOUSE_ADMIN_TRANSACTIONS_FILTER_STATUS
+    slot: 47
+    enable-text: ' #F27438➜ %status%'
+    disable-text: ' #76CDCD➜ %status%'
+    all-statuses-name: "Tất cả"
+    statuses:
+      - PENDING
+      - RETRIEVED
+    status-names:
+      PENDING: "Chờ nhận"
+      RETRIEVED: "Đã nhận"
+    item:
+      material: HOPPER
+      name: '#2CCED2<bold>Lọc theo trạng thái'
+      lore:
+        - '#92ffffCác trạng thái:'
+        - '%ALL%'
+        - '%PENDING%'
+        - '%RETRIEVED%'
+        - ''
+        - '#8c8c8c• #2CCED2Click #92ffffđể thay đổi'
+  filter-date:
+    type: ZAUCTIONHOUSE_ADMIN_TRANSACTIONS_FILTER_DATE
+    slot: 51
+    enable-text: ' #F27438➜ %date%'
+    disable-text: ' #76CDCD➜ %date%'
+    filters:
+      - ALL
+      - TODAY
+      - THIS_WEEK
+      - THIS_MONTH
+      - THIS_YEAR
+    filter-names:
+      ALL: "Tất cả"
+      TODAY: "Hôm nay"
+      THIS_WEEK: "Tuần này"
+      THIS_MONTH: "Tháng này"
+      THIS_YEAR: "Năm này"
+    item:
+      material: CLOCK
+      name: '#2CCED2<bold>Lọc theo ngày'
+      lore:
+        - '#92ffffCác mốc thời gian:'
+        - '%ALL%'
+        - '%TODAY%'
+        - '%THIS_WEEK%'
+        - '%THIS_MONTH%'
+        - '%THIS_YEAR%'
+        - ''
+        - '#8c8c8c• #2CCED2Click #92ffffđể thay đổi'
