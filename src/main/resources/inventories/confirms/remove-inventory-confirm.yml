@@ -1,0 +1,37 @@
+name: "#0c1719Xác nhận hủy bán các vật phẩm này?"
+size: 54
+items:
+  item-content:
+    type: ZAUCTIONHOUSE_ITEM_CONTENT
+    slots:
+      - 0-44
+  deny:
+    type: BACK
+    slot: 45
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "#ff3535<bold>✘ Quay lại"
+      lore:
+        - "#92ffffQuay lại."
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể quay lại"
+  shulker:
+    type: ZAUCTIONHOUSE_SHULKER_OPEN
+    slot: 49
+    item:
+      material: SHULKER_BOX
+      name: "#2CCED2<bold>Xem nội dung hộp"
+      lore:
+        - "#92ffffXem nội dung trong hộp Shulker."
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể xem"
+  confirm:
+    type: ZAUCTIONHOUSE_CONFIRM_REMOVE_LISTED
+    slot: 53
+    item:
+      material: LIME_STAINED_GLASS_PANE
+      name: "#2CCED2<bold>✔ Xác nhận hủy"
+      lore:
+        - "#92ffffHủy bán các vật phẩm này."
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể hủy"
