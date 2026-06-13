@@ -1,0 +1,90 @@
+name: '#0c1719[Admin] Nhật ký (%page%/%max-page%)'
+size: 54
+patterns:
+  - 'zauctionhouse-decoration'
+  - 'zauctionhouse-pagination'
+  - 'zauctionhouse-back'
+items:
+  items:
+    type: ZAUCTIONHOUSE_ADMIN_LOGS
+    loading-slot: 22
+    slots:
+      - 9-17
+      - 18-26
+      - 27-35
+      - 36-44
+    item:
+      material: BARRIER
+      name: "#ff0000Đang tải..."
+    else:
+      slots:
+        - 22
+      item:
+        material: BARRIER
+        name: '#ff0000&nKhông có nhật ký nào'
+        lore:
+          - ''
+          - '&7Chưa có hành động nào được ghi lại.'
+  filter-type:
+    type: ZAUCTIONHOUSE_ADMIN_LOGS_FILTER_TYPE
+    slot: 47
+    enable-text: ' #F27438➜ %type%'
+    disable-text: ' #76CDCD➜ %type%'
+    all-types-name: "Tất cả"
+    types:
+      - SALE
+      - PURCHASE
+      - REMOVE_LISTED
+      - REMOVE_SELLING
+      - REMOVE_EXPIRED
+      - REMOVE_PURCHASED
+    type-names:
+      SALE: "Đăng bán"
+      PURCHASE: "Mua hàng"
+      REMOVE_LISTED: "Hủy đăng bán"
+      REMOVE_SELLING: "Lấy lại đồ bán"
+      REMOVE_EXPIRED: "Lấy đồ hết hạn"
+      REMOVE_PURCHASED: "Lấy đồ đã mua"
+    item:
+      material: HOPPER
+      name: '#2CCED2<bold>Lọc theo loại'
+      lore:
+        - '#92ffffCác loại:'
+        - '%ALL%'
+        - '%SALE%'
+        - '%PURCHASE%'
+        - '%REMOVE_LISTED%'
+        - '%REMOVE_SELLING%'
+        - '%REMOVE_EXPIRED%'
+        - '%REMOVE_PURCHASED%'
+        - ''
+        - '#8c8c8c• #2CCED2Click #92ffffđể thay đổi'
+  filter-date:
+    type: ZAUCTIONHOUSE_ADMIN_LOGS_FILTER_DATE
+    slot: 51
+    enable-text: ' #F27438➜ %date%'
+    disable-text: ' #76CDCD➜ %date%'
+    filters:
+      - ALL
+      - TODAY
+      - THIS_WEEK
+      - THIS_MONTH
+      - THIS_YEAR
+    filter-names:
+      ALL: "Tất cả"
+      TODAY: "Hôm nay"
+      THIS_WEEK: "Tuần này"
+      THIS_MONTH: "Tháng này"
+      THIS_YEAR: "Năm này"
+    item:
+      material: CLOCK
+      name: '#2CCED2<bold>Lọc theo ngày'
+      lore:
+        - '#92ffffCác mốc thời gian:'
+        - '%ALL%'
+        - '%TODAY%'
+        - '%THIS_WEEK%'
+        - '%THIS_MONTH%'
+        - '%THIS_YEAR%'
+        - ''
+        - '#8c8c8c• #2CCED2Click #92ffffđể thay đổi'
