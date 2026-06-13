@@ -1,0 +1,26 @@
+name: "#0c1719Xác nhận mua vật phẩm?"
+size: 27
+items:
+  deny:
+    type: BACK
+    slot: 11
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "#ff3535<bold>✘ Quay lại"
+      lore:
+        - "#92ffffQuay lại."
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể quay lại"
+  show:
+    type: ZAUCTIONHOUSE_SHOW
+    slot: 13
+  confirm:
+    type: ZAUCTIONHOUSE_CONFIRM_PURCHASE
+    slot: 15
+    item:
+      material: LIME_STAINED_GLASS_PANE
+      name: "#2CCED2<bold>✔ Xác nhận mua"
+      lore:
+        - "#92ffffMua vật phẩm này."
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể mua"
