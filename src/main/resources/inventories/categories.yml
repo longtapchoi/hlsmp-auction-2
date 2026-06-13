@@ -1,0 +1,123 @@
+name: "#0c1719Danh mục"
+size: 54
+patterns:
+  - 'zauctionhouse-decoration'
+  - 'zauctionhouse-back'
+items:
+  all-items:
+    type: ZAUCTIONHOUSE_CATEGORY
+    category: all
+    slot: 4
+    item:
+      material: CHEST
+      name: "#2CCED2<bold>Tất cả vật phẩm"
+      lore:
+        - "#92ffffXem tất cả vật phẩm đang bán"
+        - ""
+        - "#92ffffTổng số#8c8c8c: #2CCED2%zauctionhouse_category_count_all%"
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể xem"
+  blocks:
+    type: ZAUCTIONHOUSE_CATEGORY
+    category: blocks
+    slot: 19
+    item:
+      material: GRASS_BLOCK
+      name: "#7a7a7a<bold>Khối xây dựng"
+      lore:
+        - "#92ffffTất cả các loại khối"
+        - ""
+        - "#92ffffSố lượng#8c8c8c: #2CCED2%zauctionhouse_category_count_blocks%"
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể xem"
+  weapons:
+    type: ZAUCTIONHOUSE_CATEGORY
+    category: weapons
+    slot: 20
+    item:
+      material: DIAMOND_SWORD
+      name: "#ff5555<bold>Vũ khí"
+      lore:
+        - "#92ffffKiếm, cung, nỏ..."
+        - ""
+        - "#92ffffSố lượng#8c8c8c: #2CCED2%zauctionhouse_category_count_weapons%"
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể xem"
+  armor:
+    type: ZAUCTIONHOUSE_CATEGORY
+    category: armor
+    slot: 21
+    item:
+      material: DIAMOND_CHESTPLATE
+      name: "#55ffff<bold>Giáp"
+      lore:
+        - "#92ffffMũ, giáp ngực, quần, giày..."
+        - ""
+        - "#92ffffSố lượng#8c8c8c: #2CCED2%zauctionhouse_category_count_armor%"
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể xem"
+  tools:
+    type: ZAUCTIONHOUSE_CATEGORY
+    category: tools
+    slot: 22
+    item:
+      material: DIAMOND_PICKAXE
+      name: "#ffff55<bold>Công cụ"
+      lore:
+        - "#92ffffCuốc, rìu, xẻng..."
+        - ""
+        - "#92ffffSố lượng#8c8c8c: #2CCED2%zauctionhouse_category_count_tools%"
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể xem"
+  consumables:
+    type: ZAUCTIONHOUSE_CATEGORY
+    category: consumables
+    slot: 23
+    item:
+      material: GOLDEN_APPLE
+      name: "#55ff55<bold>Tiêu thụ"
+      lore:
+        - "#92ffffThức ăn, thuốc..."
+        - ""
+        - "#92ffffSố lượng#8c8c8c: #2CCED2%zauctionhouse_category_count_consumables%"
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể xem"
+  resources:
+    type: ZAUCTIONHOUSE_CATEGORY
+    category: resources
+    slot: 24
+    item:
+      material: DIAMOND
+      name: "#ffaa00<bold>Tài nguyên"
+      lore:
+        - "#92ffffQuặng, thỏi kim loại..."
+        - ""
+        - "#92ffffSố lượng#8c8c8c: #2CCED2%zauctionhouse_category_count_resources%"
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể xem"
+  enchanted-books:
+    type: ZAUCTIONHOUSE_CATEGORY
+    category: enchanted-books
+    slot: 25
+    item:
+      material: ENCHANTED_BOOK
+      name: "#ff55ff<bold>Sách phù phép"
+      lore:
+        - "#92ffffSách có phù phép"
+        - ""
+        - "#92ffffSố lượng#8c8c8c: #2CCED2%zauctionhouse_category_count_enchanted-books%"
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể xem"
+  misc:
+    type: ZAUCTIONHOUSE_CATEGORY
+    category: misc
+    slot: 31
+    item:
+      material: CHEST
+      name: "#555555<bold>Linh tinh"
+      lore:
+        - "#92ffffCác vật phẩm khác"
+        - ""
+        - "#92ffffSố lượng#8c8c8c: #2CCED2%zauctionhouse_category_count_misc%"
+        - ""
+        - "#8c8c8c• #2CCED2Click #92ffffđể xem"
