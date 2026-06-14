@@ -1,0 +1,96 @@
+################################################################################################################################
+#
+#   zAuctionHouse V4 - Discord Webhook Configuration
+#   HLSMP - Đã cấu hình
+#
+################################################################################################################################
+
+enabled: true
+server-name: "HLSMP"
+
+item-image-url: "https://img.groupez.dev/minecraft/%item_material%.png"
+extract-dominant-color: false
+default-color: "#2CCED2"
+
+webhooks:
+
+  sell:
+    enabled: true
+    url: "https://discord.com/api/webhooks/1496814720555155548/upORTzbPSQ0VOloAak3DEfxFR2Tdfhkg3ay3p4oSlQhJpcxFfVdxmruW6jes9dGyLG_2"
+    username: "HLSMP Đấu Giá"
+    avatar-url: ""
+    content: ""
+    embed:
+      title: "📦 Vật phẩm mới được đăng bán!"
+      description: "**%seller_name%** vừa đăng bán vật phẩm trên chợ đấu giá."
+      color: "#2CCED2"
+      fields:
+        - name: "🎁 Vật phẩm"
+          value: "%item_display%"
+          inline: true
+        - name: "💰 Giá"
+          value: "%formatted_price%"
+          inline: true
+        - name: "📦 Số lượng"
+          value: "%item_amount%"
+          inline: true
+        - name: "🏦 Loại tiền"
+          value: "%economy_display_name%"
+          inline: true
+        - name: "⌚ Hết hạn"
+          value: "%remaining_time%"
+          inline: true
+      footer:
+        text: "HLSMP • Đấu Giá"
+        icon-url: ""
+      author:
+        name: "%seller_name%"
+        url: ""
+        icon-url: "https://mc-heads.net/avatar/%seller_uuid%"
+      thumbnail:
+        url: "%item_image_url%"
+      image:
+        url: ""
+      timestamp: true
+
+  purchase:
+    enabled: true
+    url: "https://discord.com/api/webhooks/1496814720555155548/upORTzbPSQ0VOloAak3DEfxFR2Tdfhkg3ay3p4oSlQhJpcxFfVdxmruW6jes9dGyLG_2"
+    username: "HLSMP Đấu Giá"
+    avatar-url: ""
+    content: ""
+    embed:
+      title: "💰 Vật phẩm vừa được mua!"
+      description: "**%buyer_name%** vừa mua đồ của **%seller_name%**."
+      color: "#FFD700"
+      fields:
+        - name: "🎁 Vật phẩm"
+          value: "%item_display%"
+          inline: true
+        - name: "💰 Giá"
+          value: "%formatted_price%"
+          inline: true
+        - name: "📦 Số lượng"
+          value: "%item_amount%"
+          inline: true
+        - name: "🛒 Người mua"
+          value: "%buyer_name%"
+          inline: true
+        - name: "🏪 Người bán"
+          value: "%seller_name%"
+          inline: true
+        - name: "🏦 Loại tiền"
+          value: "%economy_display_name%"
+          inline: true
+      footer:
+        text: "HLSMP • Đấu Giá"
+        icon-url: ""
+      author:
+        name: "%buyer_name%"
+        url: ""
+        icon-url: "https://mc-heads.net/avatar/%buyer_uuid%"
+      thumbnail:
+        url: "%item_image_url%"
+      image:
+        url: ""
+      timestamp: true
